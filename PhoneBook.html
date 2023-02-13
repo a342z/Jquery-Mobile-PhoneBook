@@ -27,19 +27,19 @@
                 class="ui-input-text ui-body-c">
             <ul data-role="listview" data-inset="true">
                 <li><a href="#contact-details">
-                        <img src=" ../_assets/img/album-bb.jpg">
+                        <img src="images/woman.png">
                         <h2>Broken Bells</h2>
                         <p>Broken Bells</p>
                     </a>
                 </li>
                 <li><a href="#contact-details">
-                        <img src=" ../_assets/img/album-hc.jpg">
+                        <img src="images/man.png">
                         <h2>Warning</h2>
                         <p>Hot Chip</p>
                     </a>
                 </li>
                 <li><a href="#contact-details">
-                        <img src=" ../_assets/img/album-p.jpg">
+                        <img src="images/woman.png">
                         <h2>Wolfgang Amadeus Phoenix</h2>
                         <p>Phoenix</p>
                     </a>
@@ -56,13 +56,26 @@
     <div data-role="page" id="contact-details">
 
         <div data-role="header">
-            <h1>contact-details</h1>
+            <a href="#contacts-list" class="ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left">Back</a>
+            <h1>Mona Abdo</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that
-                references my id is beeing clicked.</p>
-            <p><a href="#contacts-list">Back to contact list</a></p>
+            <div>
+                <img src="images/woman.png">
+            </div>
+            <div>
+                <a href="#delete-popup" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left"></a>
+                <a href="#" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-left"></a>
+                <a href="#"  class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left"></a>
+            </div>
+
+       
+            <div data-role="popup" id="delete-popup" class="ui-content">
+                <p>Delete contact ?</p>
+                <button class="ui-btn ui-btn-inline">Cancel</button>
+                <button class="ui-btn ui-btn-inline">Delete</button>
+            </div>
         </div><!-- /content -->
 
         <div data-role="footer">
