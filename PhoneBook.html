@@ -17,17 +17,35 @@
     <div data-role="page" id="contacts-list">
 
         <div data-role="header">
+            <a href="#add-contact" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-left">Add</a>
+
             <h1>Contact List</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>I'm first in the source order so I'm shown as the page.</p>
-            <p>Add contact <a href="#add-contact">go</a></p>
-            <p>contact-details<a href="#contact-details">go</a></p>
+            <input type="text" data-type="search" name="filter" id="search-basic" value=""
+                class="ui-input-text ui-body-c">
+            <ul data-role="listview" data-inset="true">
+                    <li><a href="#contact-details"">
+                                <img src="../_assets/img/album-bb.jpg">
+                            <h2>Broken Bells</h2>
+                            <p>Broken Bells</p></a>
+                        </li>
+                    <li><a href="#contact-details"">
+                                <img src="../_assets/img/album-hc.jpg">
+                            <h2>Warning</h2>
+                            <p>Hot Chip</p></a>
+                        </li>
+                    <li><a href="#contact-details"">
+                                <img src="../_assets/img/album-p.jpg">
+                            <h2>Wolfgang Amadeus Phoenix</h2>
+                            <p>Phoenix</p></a>
+                        </li>
+            </ul>
         </div><!-- /content -->
 
         <div data-role="footer">
-            <h4>Page Footer</h4>
+            <h4>Contact List</h4>
         </div><!-- /footer -->
     </div><!-- /Contact List page -->
 
