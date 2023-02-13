@@ -65,12 +65,13 @@
                 <img src="images/woman.png">
             </div>
             <div>
-                <a href="#delete-popup" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left"></a>
+                <a href="#delete-popup" data-rel="popup"
+                    class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left"></a>
                 <a href="#" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-left"></a>
-                <a href="#"  class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left"></a>
+                <a href="#" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left"></a>
             </div>
 
-       
+
             <div data-role="popup" id="delete-popup" class="ui-content">
                 <p>Delete contact ?</p>
                 <button class="ui-btn ui-btn-inline">Cancel</button>
@@ -87,17 +88,36 @@
     <div data-role="page" id="add-contact">
 
         <div data-role="header">
+            <a href="#contacts-list" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
             <h1>add-contact</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that
-                references my id is beeing clicked.</p>
-            <p><a href="#contacts-list">Back to contact list</a></p>
+            <form>
+                <div class="ui-field-contain">
+                    <label for="text-12">Name </label>
+                    <input type="text" name="text-12" id="text-12" value="">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="text-13"> Phone </label>
+                    <input type="text" data-clear-btn="true" name="text-13" id="text-13" value="">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="search-8">Email</label>
+                    <input type="text" name="search-8" id="search-8" value="">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="textarea-12">gender:</label>
+                    <textarea cols="40" rows="8" name="textarea-12" id="textarea-12"></textarea>
+                </div>
+            </form>
+
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-left"> Save </a>
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left"> Cancel </a>
         </div><!-- /content -->
 
         <div data-role="footer">
-            <h4>Page Footer</h4>
+            <h4>Contact List</h4>
         </div><!-- /footer -->
     </div><!-- /Add Contact Page -->
 
@@ -105,3 +125,16 @@
 </body>
 
 </html>
+
+
+
+<!-- <form>
+                <input type="button" data-inline="true" value="Save">
+                <button class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all"
+                    fdprocessedid="bw010y">Save</button>
+                <div class="ui-input-btn ui-btn ui-btn-inline">
+                    <button class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow ui-corner-all"
+                        fdprocessedid="r0ocn">delete</button>
+                    <input type="button" data-enhanced="true" value="Enhanced">
+                </div>
+            </form> -->
