@@ -65,16 +65,26 @@
                 <img src="images/woman.png">
             </div>
             <div>
-                <a href="#delete-popup" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left"></a>
-                <a href="#" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-left"></a>
-                <a href="#"  class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-left"></a>
+
+                <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <a href="#delete-popup" data-rel="popup"
+                        class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext">Icon only</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-edit ui-btn-icon-notext">Icon only</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext">Icon only</a>
+                </div>
+
             </div>
 
-       
+
             <div data-role="popup" id="delete-popup" class="ui-content">
                 <p>Delete contact ?</p>
-                <button class="ui-btn ui-btn-inline">Cancel</button>
-                <button class="ui-btn ui-btn-inline">Delete</button>
+                <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+
+                    <button class="ui-btn ui-btn-inline">Cancel</button>
+                    <button class="ui-btn ui-btn-inline">Delete</button>
+
+                </div>
+
             </div>
         </div><!-- /content -->
 
