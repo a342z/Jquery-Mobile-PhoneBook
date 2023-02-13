@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="PhoneBook.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Contact List Page -->
+    <div data-role="page" id="contacts-list">
+
+        <div data-role="header">
+            <h1>Contact List</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>I'm first in the source order so I'm shown as the page.</p>
+            <p>Add contact <a href="#add-contact">go</a></p>
+            <p>contact-details<a href="#contact-details">go</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /Contact List page -->
+
+    <!-- Contact Details Page -->
+    <div data-role="page" id="contact-details">
+
+        <div data-role="header">
+            <h1>contact-details</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that
+                references my id is beeing clicked.</p>
+            <p><a href="#contacts-list">Back to contact list</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /Contact Details Page -->
+
+    <!-- Add Contact Page -->
+    <div data-role="page" id="add-contact">
+
+        <div data-role="header">
+            <h1>add-contact</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that
+                references my id is beeing clicked.</p>
+            <p><a href="#contacts-list">Back to contact list</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /Add Contact Page -->
+
+
+</body>
+
+</html>
