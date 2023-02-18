@@ -24,10 +24,11 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <input type="text" data-type="search" name="filter" id="search-basic" value=""
+            <input type="text" id="filterBasic-input" data-type="search" data-type="search" name="filter" value=""
                 class="ui-input-text ui-body-c">
-            <ul data-role="listview" data-inset="true" id="contacts-listview">
-     
+            <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true"
+                id="contacts-listview">
+
             </ul>
         </div><!-- /content -->
 
@@ -41,20 +42,26 @@
 
         <div data-role="header">
             <a href="#contacts-list" class="ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left">Back</a>
-            <h1>Mona Abdo</h1>
+            <h1 id="details-name">Mona Abdo</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <div>
-                <img src="images/female.png">
+                <img id="details-image" src="images/female.png">
             </div>
+            <!-- <div>
+                <label id="details-phone"></label>
+            </div> -->
             <div>
 
                 <div data-role="controlgroup" data-type="horizontal" data-mini="true">
-                    <a href="#delete-popup" data-rel="popup"
+                    <a href="#delete-popup" data-rel="popup" id="details-deleteContact"
                         class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext">Icon only</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-icon-edit ui-btn-icon-notext">Icon only</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext">Icon only</a>
+                    <a href="#" id="details-editContact" onclick="edit(contact.id)"
+                        class="ui-btn ui-corner-all ui-icon-edit ui-btn-icon-notext">Icon
+                        only</a>
+                    <a href="#" id="details-callPhone"
+                        class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext">Icon only</a>
                 </div>
 
             </div>
