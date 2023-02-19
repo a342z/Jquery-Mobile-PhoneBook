@@ -57,8 +57,8 @@
                 <div data-role="controlgroup" data-type="horizontal" data-mini="true">
                     <a href="#delete-popup" data-rel="popup" id="details-deleteContact"
                         class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext">Icon only</a>
-                    <a href="#" id="details-editContact" onclick="edit(contact.id)"
-                        class="ui-btn ui-corner-all ui-icon-edit ui-btn-icon-notext">Icon
+                    <a href="#edit-contact" id="details-editContact" 
+                        class="ui-btn ui-corner-all ui-icon-edit ui-btn-icon-notext" onclick="EditClick()">Icon
                         only</a>
                     <a href="#" id="details-callPhone"
                         class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-notext">Icon only</a>
@@ -96,17 +96,17 @@
             <form>
                 <div class="ui-field-contain">
                     <label for="textinput-name">Name:</label>
-                    <input type="text" name="textinput-name" id="textinput-name" placeholder="" value="">
+                    <input required type="text" name="textinput-name" id="textinput-name" placeholder="" value="">
                 </div>
 
                 <div class="ui-field-contain">
                     <label for="textinput-phone">Phone:</label>
-                    <input type="text" name="textinput-phone" id="textinput-phone" placeholder="01012345678" value="">
+                    <input required type="text" name="textinput-phone" id="textinput-phone" placeholder="01012345678" value="">
                 </div>
 
                 <div class="ui-field-contain">
                     <label for="textinput-email">Email:</label>
-                    <input required type="text" name="textinput-email" id="textinput-email" placeholder="" value="">
+                    <input type="text" name="textinput-email" id="textinput-email" placeholder="" value="">
                 </div>
 
                 <div class="ui-field-contain">
@@ -130,6 +130,53 @@
             <h4>Page Footer</h4>
         </div><!-- /footer -->
     </div><!-- /Add Contact Page -->
+
+        <!-- Edit Contact Page -->
+        <div data-role="page" id="edit-contact">
+
+            <div data-role="header">
+                <a href="#contacts-list" class="ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left">Back</a>
+                <h1>add-contact</h1>
+            </div><!-- /header -->
+    
+            <div role="main" class="ui-content">
+                <form >
+                    <div class="ui-field-contain">
+                        <label for="textinput-name-edit">Name:</label>
+                        <input required type="text" name="textinput-name-edit" id="textinput-name-edit" placeholder="" value="">
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="textinput-phone-edit">Phone:</label>
+                        <input required type="text" name="textinput-phone-edit" id="textinput-phone-edit" placeholder="01012345678" value="">
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="textinput-email-edit">Email:</label>
+                        <input type="text" name="textinput-email-edit" id="textinput-email-edit" placeholder="" value="">
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="select-gender">Gender:</label>
+                        <select name="select-gender-edit" id="select-gender-edit" data-role="slider">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+    
+                    <button type="submit" href="#contacts-list" id="edit-button"
+                        class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left" onclick="updateContact(event)">Update</button>
+                    <button type="reset" href="#"
+                        class="ui-btn ui-btn-inline ui-icon-forbidden ui-btn-icon-left">Cancel</button>
+                </form>
+    
+    
+            </div><!-- /content -->
+    
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /Add Contact Page -->
 
 
 </body>
